@@ -8,6 +8,10 @@ public abstract class MessageDecorator implements MessageProcessor {
         this.messageProcessor = messageProcessor;
     }
 
+    public MessageDecorator() {
+
+    }
+
     @Override
     public void sendMessage(Message message) {
         messageProcessor.sendMessage(message);

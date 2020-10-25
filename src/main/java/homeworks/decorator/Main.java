@@ -9,7 +9,7 @@ public class Main {
         message.sendMessage(message);
         message.getMessage(message);
 
-        Message encrypt = new Message(new EncryptMessage());
+        Message encrypt = new Message(new EncryptMessage(new HideUserMessage()));
         encrypt.setAuthor("Tom");
         encrypt.setAddress("Bob");
         encrypt.setText("It's  message");

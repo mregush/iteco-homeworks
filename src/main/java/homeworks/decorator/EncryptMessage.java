@@ -1,7 +1,13 @@
 package homeworks.decorator;
 
-public class EncryptMessage implements MessageProcessor {
+public class EncryptMessage extends MessageDecorator implements MessageProcessor {
 
+    public EncryptMessage(MessageProcessor messageProcessor) {
+        super(messageProcessor);
+    }
+
+    public EncryptMessage() {
+    }
 
     @Override
     public void sendMessage(Message message) {
